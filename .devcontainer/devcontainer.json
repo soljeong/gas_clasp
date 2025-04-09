@@ -1,0 +1,10 @@
+// See https://containers.dev/implementors/json_reference/ for configuration reference
+{
+	"name": "Node.js + Clasp",
+	"build": {
+		"dockerfile": "Dockerfile"
+	},
+  "remoteUser": "node",
+  "workspaceFolder": "/workspace",
+  "postCreateCommand": "npm -v && clasp -v"
+}
